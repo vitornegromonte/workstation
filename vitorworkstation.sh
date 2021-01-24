@@ -19,7 +19,8 @@ sudo snap install code --classic &&
 sudo snap install --edge node --classic &&
 sudo snap install spotify &&
 sudo snap install wps-office-multilang &&
-sudo snap install insomnia
+sudo snap install insomnia &&
+sudo snap install postman
 
 ## Adicionando repositório Flathub ##
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.comflatpakrepo &&
