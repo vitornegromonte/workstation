@@ -7,17 +7,21 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 sudo apt update &&
 
 ##Pacotes do repositório deb do Ubuntu
-sudo apt install python3 git build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
+sudo apt install python3 git build-essential libssl-dev ubuntu-make flatpak gnome-software-plugin-flatpak -y &&
 
 ## Instalando snap ##
 sudo apt install snapd
 
 ## Instalando pacotes Snap ##
 sudo snap install discord &&
+echo "Discord instalado com sucesso"
 sudo snap install code --classic &&
+echo "Visual Studio Code instalado com sucesso"
 sudo snap install --edge node --classic &&
 sudo snap install spotify &&
+echo "Spotify instalado com sucesso"
 sudo snap install postman
+echo "Postman instalado com sucesso"
 
 ## Adicionando repositório Flathub ##
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.comflatpakrepo &&
@@ -32,15 +36,12 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update &&
 sudo apt-get install sublime-text
 
-## Instalando pacote Ubuntu Make
-sudo apt-get install ubuntu-make && sudo apt-get update
-
 ## Instalando linguagem Dart
 sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -' &&
 sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list' &&
 sudo apt-get update
 sudo apt-get install dart
-
+echo "Dart-lang instalada com sucesso"
 
 ## Atualização do sistema ##
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
