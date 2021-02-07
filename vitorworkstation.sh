@@ -6,28 +6,23 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 ## Atualizando o repositório ##
 sudo apt update &&
 
-##Pacotes do repositório deb do Ubuntu
-sudo apt install python3 git build-essential libssl-dev ubuntu-make flatpak gnome-software-plugin-flatpak -y &&
+## Pacotes do repositório deb do Ubuntu ##
+sudo apt install python3 build-essential libssl-dev ubuntu-make flatpak gnome-software-plugin-flatpak -y &&
+
+## Git ##
+sudo apt-get install git &&
+git config --global user.name = "Vitor Negromonte" &&
+git config --global user.email = "vitorncabral@protonmail.com"
 
 ## Instalando snap ##
 sudo apt install snapd
 
 ## Instalando pacotes Snap ##
-sudo snap install discord &&
-echo "Discord instalado com sucesso"
 sudo snap install code --classic &&
 echo "Visual Studio Code instalado com sucesso"
 sudo snap install --edge node --classic &&
 sudo snap install spotify &&
 echo "Spotify instalado com sucesso"
-sudo snap install postman
-echo "Postman instalado com sucesso"
-
-## Adicionando repositório Flathub ##
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.comflatpakrepo &&
-
-## Instalando Apps do Flathub ##
-sudo flatpak install flathub com.obsproject.Studio -y &&
 
 ## Instalando Sublime Text 3 via pacote oficial
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && 
