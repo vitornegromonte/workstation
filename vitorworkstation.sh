@@ -18,6 +18,7 @@ git config --global user.email = "vitorncabral@protonmail.com"
 sudo apt install snapd
 
 ## Instalando pacotes Snap ##
+sudo snap install discord &&
 sudo snap install code --classic &&
 echo "Visual Studio Code instalado com sucesso"
 sudo snap install --edge node --classic &&
