@@ -11,8 +11,8 @@ sudo apt install python3 build-essential libssl-dev ubuntu-make flatpak gnome-so
 
 ## Git ##
 sudo apt-get install git &&
-git config --global user.name = "Vitor Negromonte" &&
-git config --global user.email = "vitorncabral@protonmail.com"
+git config --global user.name "Vitor Negromonte" &&
+git config --global user.email "vitorncabral@protonmail.com"
 
 ## Instalando snap ##
 sudo apt install snapd
