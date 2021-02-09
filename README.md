@@ -4,7 +4,7 @@ Script para instalação automatizada no Ubuntu
 
 Passo a passo:
 
-	 1 - cd Documents
+	1 - cd Documents
 
 	2 - git clone https://github.com/vitornegromonte/vitorworkstation.git
 
