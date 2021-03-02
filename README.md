@@ -6,13 +6,14 @@ Passo a passo:
 
 	1 - cd Documents
 
-	2 - git clone https://github.com/vitornegromonte/vitorworkstation.git
+	2 - git clone https://github.com/vitornegromonte/workstation.git
 
-	3 - cd vitorworkstation
+	3 - cd workstation
 
-	4 - chmod +x vitorworkstation.sh
+	4 - chmod +x vitor.sh
 
-	5 - sudo ./vitorworkstation.sh
+	5 - sudo ./vitor.sh
+
 ### Aplicações e pacotes instalados 
 - Chrome
 - Brave
@@ -23,6 +24,7 @@ Passo a passo:
 - Ubuntu make
 - Sublime text 3
 - Neofetch
+
 
 - Python 3
 - Python 2
