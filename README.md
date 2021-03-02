@@ -1,4 +1,4 @@
-## Vitorworkstation
+## Workstation configure
 
 Script para instalação automatizada no Ubuntu
 
@@ -23,6 +23,7 @@ Passo a passo:
 - Ubuntu make
 - Sublime text 3
 - Neofetch
+
 - Python 3
 - Python 2
 - Go-lang
