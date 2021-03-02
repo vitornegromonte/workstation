@@ -14,13 +14,21 @@ Passo a passo:
 
 	5 - sudo ./vitorworkstation.sh
 ### Aplicações e pacotes instalados 
--  Python 3
-- Ubuntu make
-- Git
-- Discord
+- Chrome
+- Brave
+- Gnome Tweak Tool
+- OBS Studio
+- VLC
 - Visual Studio Code
-- Node.js
-- Spotify
+- Ubuntu make
 - Sublime text 3
-- Linguagem Dart
-- Brave browser
+- Neofetch
+- Python 3
+- Python 2
+- Go-lang
+- Java
+- PHP 8
+- Elixir
+- Ruby
+- Node.js
+- Dart
