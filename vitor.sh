@@ -11,7 +11,7 @@ git config --global user.name "Vitor Negromonte" && git config --global user.ema
 echo "Git configured"
 
 ## Package installing ##
-sudo apt install curl gnome-tweak-tool snapd libssl-dev ubuntu-make flatpak gnome-software-plugin-flatpak -y &&
+sudo apt install curl gnome-tweak-tool snapd libssl-dev ubuntu-make flatpak neofetch gnome-software-plugin-flatpak -y &&
 
 ## VLC and Obs-studio ##
 sudo apt install vlc obs-studio -y &&
