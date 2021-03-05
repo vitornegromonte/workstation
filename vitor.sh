@@ -13,6 +13,18 @@ echo "Git configured"
 ## Package installing ##
 sudo apt install curl gnome-tweak-tool snapd libssl-dev ubuntu-make flatpak neofetch gnome-software-plugin-flatpak -y &&
 
+## Visual Studio Code ##
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg &&
+sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/ &&
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list' &&
+sudo apt install apt-transport-https &&
+sudo apt update &&
+sudo apt install code
+
+## Yarn ##
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - &&
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
 ## VLC and Obs-studio ##
 sudo apt install vlc obs-studio -y &&
 echo "VLC and OBS installed"
@@ -54,6 +66,13 @@ echo "Brave installed"
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo apt-get update && sudo sed -i -e 's/deb http/deb [arch=amd64] http/' "/etc/apt/sources.list.d/google.list" && sudo sed -i -e 's/deb http/deb [arch=amd64] http/' "/opt/google/chrome/cron/google-chrome" && sudo apt-get install google-chrome-stable &&
 echo "Chrome installed"
 
+## Dev ##
+cd ~
+mkdir Dev
+cd Dev
+code .
+
 ## Atualization ##
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade -y && sudo apt autoremove && sudo apt autoclean &&
+
 echo "End of the script"
