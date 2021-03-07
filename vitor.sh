@@ -37,7 +37,7 @@ echo "Sublime Text 3 installed"
 sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -' && sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list' && sudo apt-get update && sudo apt-get install dart &&
 echo "Dart-lang installed"
 
-## Go, Python 2 and Python 3  ##
+## Go, Python 2 and Python 3, Ruby  ##
 sudo apt-get install golang-go python3 python2 ruby-full &&
 echo "Ruby, Go-lang, Python 2 and Python 3 installed "
 
